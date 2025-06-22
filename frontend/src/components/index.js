@@ -1,0 +1,5 @@
+export {default as Header} from "./home/header"
+export {default as RegisterForm} from "./auth/register-form"
+export {default as LoginForm} from "./auth/login-form"
+export {default as StartNewForm} from "./home/start-new-form"
+export {default as ResentTempletes} from "./home/resent-templetes"
