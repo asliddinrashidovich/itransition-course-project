@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function AuthComponent() {
   return (
-    <div>
+    <>
         <div className="hidden md:flex gap-[7px] items-center">
               <Link to={'/login'} className="border-[1px] border-[#461773] text-[#461773] rounded-[30px] cursor-pointer px-[20px] py-[5px]">
                 Login
@@ -11,7 +11,7 @@ function AuthComponent() {
                 Register
               </Link>
         </div>
-    </div>
+    </>
   )
 }
 

@@ -1,10 +1,14 @@
-import { Header, ResentTempletes, StartNewForm } from "../components"
+import { Header, NonAuthHero, ResentTempletes, StartNewForm } from "../components"
 
 function HomePage() {
+  const token = localStorage.getItem('token')
   return (
     <>
-      <StartNewForm/>
-      <ResentTempletes/>
+      {!token && <NonAuthHero/>}
+      {token && <div>
+        <StartNewForm/>
+        <ResentTempletes/>
+      </div>}
     </>
   )
 }
